@@ -13,6 +13,34 @@ function generateHomePage() {
   contentContainer.id = "content-container";
   homePage.appendChild(contentContainer);
 
+  const headerContainer = document.createElement("div");
+  headerContainer.id = "header-container";
+  contentContainer.appendChild(headerContainer);
+
+  const name = document.createElement("p");
+  name.id = "name";
+  name.innerText = "ARDIUS MARIA";
+  const position = document.createElement("p");
+  position.id = "position";
+  position.innerText = "Web Developer";
+
+  headerContainer.appendChild(name);
+  headerContainer.appendChild(position);
+
+  const homeContainer = document.createElement("div");
+  homeContainer.id = "home-container";
+  headerContainer.appendChild(homeContainer);
+
+  const helloContainer = document.createElement("div");
+  helloContainer.id = "hello-container";
+  helloContainer.innerText = "Hello!";
+  homeContainer.appendChild(helloContainer);
+
+  const introductionContainer = document.createElement("div");
+  introductionContainer.id = "introduction-container";
+  introductionContainer.innerText = "BLABLABLA";
+  homeContainer.appendChild(introductionContainer);
+
   //profile photo
   const photoContainer = document.createElement("div");
   photoContainer.id = "photo-container";
@@ -41,11 +69,8 @@ function generateHomePage() {
 
   //click on Home
   homeButton.addEventListener("click", () => {
-    console.log("i was clicked");
-    //content container
-    const homeContainer = document.createElement("div");
-    homeContainer.id = "home-container";
-    contentContainer.appendChild(homeContainer);
+    console.log("i was clicked home");
+    document.getElementById("home-container").style.display = "block";
   });
 
   const studiesButton = document.createElement("button");
@@ -58,6 +83,12 @@ function generateHomePage() {
   buttonsContainer.appendChild(studiesButton);
   studiesButton.appendChild(circle2);
 
+  //click on Studies
+  studiesButton.addEventListener("click", () => {
+    console.log("i was clicked studies");
+    document.getElementById("home-container").style.display = "none";
+  });
+
   const experienceButton = document.createElement("button");
   experienceButton.id = "experienceButton";
   experienceButton.classList.add("noselect");
@@ -67,6 +98,12 @@ function generateHomePage() {
 
   buttonsContainer.appendChild(experienceButton);
   experienceButton.appendChild(circle3);
+
+  //click on Experience
+  experienceButton.addEventListener("click", () => {
+    console.log("i was clicked experience");
+    document.getElementById("home-container").style.display = "none";
+  });
 
   const hobbiesButton = document.createElement("button");
   hobbiesButton.id = "hobbiesButton";
@@ -78,6 +115,12 @@ function generateHomePage() {
   buttonsContainer.appendChild(hobbiesButton);
   hobbiesButton.appendChild(circle4);
 
+  //click on Hobbies
+  hobbiesButton.addEventListener("click", () => {
+    console.log("i was clicked hobbies");
+    document.getElementById("home-container").style.display = "none";
+  });
+
   const contactButton = document.createElement("button");
   contactButton.id = "contactButton";
   contactButton.classList.add("noselect");
@@ -87,6 +130,12 @@ function generateHomePage() {
 
   buttonsContainer.appendChild(contactButton);
   contactButton.appendChild(circle5);
+
+  //click on Contact
+  contactButton.addEventListener("click", () => {
+    console.log("i was clicked hobbies");
+    document.getElementById("home-container").style.display = "none";
+  });
 }
 
 generateHomePage();
