@@ -17,6 +17,7 @@ function generateHomePage() {
   headerContainer.id = "header-container";
   contentContainer.appendChild(headerContainer);
 
+
   const name = document.createElement("p");
   name.id = "name";
   name.innerText = "ARDIUS MARIA";
@@ -30,7 +31,7 @@ function generateHomePage() {
   //HOME CONTAINER
   const homeContainer = document.createElement("div");
   homeContainer.id = "home-container";
-  headerContainer.appendChild(homeContainer);
+  contentContainer.appendChild(homeContainer);
 
   const helloContainer = document.createElement("div");
   helloContainer.id = "hello-container";
@@ -45,7 +46,7 @@ function generateHomePage() {
   //STUDIES CONTAINER
   const studiesContainer = document.createElement("div");
   studiesContainer.id = "studies-container";
-  headerContainer.appendChild(studiesContainer);
+  contentContainer.appendChild(studiesContainer);
 
   const studiesTitle = document.createElement("div");
   studiesTitle.id = "studies-title";
@@ -55,7 +56,7 @@ function generateHomePage() {
   //EXPERIENCE CONTAINER
   const experienceContainer = document.createElement("div");
   experienceContainer.id = "experience-container";
-  headerContainer.appendChild(experienceContainer);
+  contentContainer.appendChild(experienceContainer);
 
   const experienceTitle = document.createElement("div");
   experienceTitle.id = "experience-title";
@@ -65,7 +66,7 @@ function generateHomePage() {
   //HOBBIES CONTAINER
   const hobbiesContainer = document.createElement("div");
   hobbiesContainer.id = "hobbies-container";
-  headerContainer.appendChild(hobbiesContainer);
+  contentContainer.appendChild(hobbiesContainer);
 
   const hobbiesTitle = document.createElement("div");
   hobbiesTitle.id = "hobbies-title";
@@ -75,7 +76,7 @@ function generateHomePage() {
   //CONTACT CONTAINER
   const contactContainer = document.createElement("div");
   contactContainer.id = "contact-container";
-  headerContainer.appendChild(contactContainer);
+  contentContainer.appendChild(contactContainer);
 
   const contactTitle = document.createElement("div");
   contactTitle.id = "contact-title";
@@ -91,6 +92,12 @@ function generateHomePage() {
   profilePhoto.id = "profile-photo";
   profilePhoto.setAttribute("src", "profile.jpg");
   menuContainer.appendChild(profilePhoto);
+
+  document.getElementById("home-container").style.display = "block";
+  document.getElementById("studies-container").style.display = "none";
+  document.getElementById("experience-container").style.display = "none";
+  document.getElementById("hobbies-container").style.display = "none";
+  document.getElementById("contact-container").style.display = "none";
 
   //menu buttons
 

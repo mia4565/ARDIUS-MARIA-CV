@@ -1,10 +1,19 @@
 body {
   margin: 0;
 }
+
 #home-page {
   height: 100%;
   display: flex;
   overflow: hidden;
+}
+
+#header-container {
+  height: 215px;
+  background-image: url("forest.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 #menu-container {
@@ -18,11 +27,10 @@ body {
   align-items: center;
 }
 #profile-photo {
-  height: 15rem;
   width: auto;
   border-radius: 50%;
+  height: 12rem;
   margin: 20px;
-  margin-left: 30px;
 }
 
 #buttons-container {
@@ -30,16 +38,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 #content-container {
   height: 100%;
   width: 100%;
-  background: #817a7a;
-}
-
-#home-container {
-  height: 100%;
-  width: 100%;
-  background: #817a7a;
+  background: #2a3537;
+  display: flex;
+  flex-direction: column;
 }
