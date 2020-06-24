@@ -17,7 +17,6 @@ function generateHomePage() {
   headerContainer.id = "header-container";
   contentContainer.appendChild(headerContainer);
 
-
   const name = document.createElement("p");
   name.id = "name";
   name.innerText = "ARDIUS MARIA";
@@ -33,15 +32,33 @@ function generateHomePage() {
   homeContainer.id = "home-container";
   contentContainer.appendChild(homeContainer);
 
+  const homeContentContainer = document.createElement("div");
+  homeContentContainer.id = "home-content-container";
+  homeContainer.appendChild(homeContentContainer);
+
+  const leftHomeContainer = document.createElement("div");
+  leftHomeContainer.id = "left-home-container";
+  homeContentContainer.appendChild(leftHomeContainer);
+
+  const rightHomeContainer = document.createElement("div");
+  rightHomeContainer.id = "right-home-container";
+  rightHomeContainer.innerText = "right";
+  homeContentContainer.appendChild(rightHomeContainer);
+
   const helloContainer = document.createElement("div");
   helloContainer.id = "hello-container";
-  helloContainer.innerText = "Hello!";
-  homeContainer.appendChild(helloContainer);
+  helloContainer.innerText = "-Hello!";
+  leftHomeContainer.appendChild(helloContainer);
+
+  const aboutMeContainer = document.createElement("div");
+  aboutMeContainer.id = "aboutme-container";
+  aboutMeContainer.innerText = "About me";
+  leftHomeContainer.appendChild(aboutMeContainer);
 
   const introductionContainer = document.createElement("div");
   introductionContainer.id = "introduction-container";
-  introductionContainer.innerText = "BLABLABLA";
-  homeContainer.appendChild(introductionContainer);
+  introductionContainer.innerText = "I am looking for a creative and exciting job that combines both working with people and technical projects. I read the description of this job and I realized that I have to give it a try! I am enthusiastic about facing new challenges, expressing my creativity and exploring new areas by learning something different. I love pushing myself into progress and I want to help others achieve their goals. My intention is for us to find the best solutions together, because improving the quality of life for people, along with effective communication is our common purpose.";
+  leftHomeContainer.appendChild(introductionContainer);
 
   //STUDIES CONTAINER
   const studiesContainer = document.createElement("div");

@@ -9,11 +9,50 @@ body {
 }
 
 #header-container {
-  height: 215px;
+  height: 165px;
   background-image: url("forest.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+}
+
+#home-content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#introduction-container {
+  max-width: 400px;
+  margin: 20px 50px 0px 30px;
+  font-size: large;
+  color: whitesmoke;
+}
+
+#aboutme-container {
+  margin: 40px 50px 0px 40px;
+  font-size: 35px;
+  color: whitesmoke;
+}
+
+#hello-container {
+  font-family: "Montserrat";
+  font-size: 50px;
+  margin: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+#name {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#position {
+  font-size: 35px;
+  margin: 20px;
+  font-family: "Cookie", cursive;
 }
 
 #menu-container {
@@ -47,4 +86,33 @@ body {
   background: #2a3537;
   display: flex;
   flex-direction: column;
+}
+
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
