@@ -14,6 +14,7 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  margin-bottom: 25px;
 }
 
 #home-content-container {
@@ -36,8 +37,9 @@ body {
 
 #hello-container {
   font-family: "Montserrat";
-  font-size: 50px;
-  margin: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   font-weight: bold;
   color: whitesmoke;
 }
@@ -88,31 +90,117 @@ body {
   flex-direction: column;
 }
 
-.ml14 {
-  font-weight: 200;
-  font-size: 3.2em;
+#studies-container {
+  font-family: "Montserrat";
+  margin-left: 20px;
+  max-width: 90%;
 }
 
-.ml14 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
+#etti-container,
+#itschool-container,
+#colegium-container {
+  color: whitesmoke;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: large;
 }
 
-.ml14 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #fff;
-  transform-origin: 100% 100%;
-  bottom: 0;
+#itschoolsection-container,
+#ettiSection-container,
+#colegiumSection-container {
+  font-size: small;
+  color: antiquewhite;
 }
 
-.ml14 .letter {
-  display: inline-block;
-  line-height: 1em;
+#schoolItinfo-container,
+#ettiInfo-container {
+  color: #d6d6d6;
+  margin-bottom: 30px;
+}
+
+#experience-content {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat";
+  margin-left: 30px;
+}
+
+#professional-history,
+#technical-exp {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#technical-exp {
+  margin-left: 220px;
+}
+
+#professional-history p,
+#technical-exp p {
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 20px;
+}
+
+#professional-history span,
+#technical-exp span {
+  font-size: small;
+  color: antiquewhite;
+  font-weight: normal;
+}
+
+#hobbies-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#hobbie1-container,
+#hobbie2-container,
+#hobbie3-container,
+#hobbie4-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat";
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: larger;
+  margin: 15px;
+  margin-top: 30px;
+}
+
+#contact-title {
+  font-family: "Montserrat";
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px;
+  margin-left: 30px;
+}
+
+#contact-title p {
+  font-size: small;
+  color: antiquewhite;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+#contact-title span {
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+#contact-title a {
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
 }
